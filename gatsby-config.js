@@ -6,6 +6,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `e1o1u1rzwn5j`,
+        accessToken: `9tkKU3855qdOTQv4HLYKS3-nETh__lCBpEbG_009OkQ`, 
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
