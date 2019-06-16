@@ -1,4 +1,5 @@
 import { css } from '@emotion/core'
+import mq from '../../utils/mediaQuery'
 
 export default css`
   background-color: #edeeef;
@@ -6,9 +7,15 @@ export default css`
   font-family: proxima-nova;
   font-weight: 300;
   font-style: normal;
-  font-size: 20px;
   letter-spacing: .01em;
   line-height: 1.4em;
   text-transform: none;
+
+	${mq('small')} {
+		font-size: 18px;
+	}
+	${mq('large')} {
+		font-size: 20px;
+	}
 
 `

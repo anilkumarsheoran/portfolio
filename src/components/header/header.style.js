@@ -18,15 +18,25 @@ export default css`
  .header_layover{
     position: absolute;
     top: 0;
-    padding: 140px 0;
     margin: 0 auto;
     width: 100%;
     text-align: center;
     color: white;
+    ${mq('small')} {
+        padding: 60px 0;
+    }
+    ${mq('large')} {
+        padding: 140px 0;
+    }
 
     .header_primary-text {
         font-family: "proxima-nova",proxima-nova;
-        font-size: 52px;
+        ${mq('small')} {
+            font-size: 26px; 
+        }
+        ${mq('large')} {
+          font-size: 52px;
+        }
         font-weight: 700;
         line-height: 1em;
         text-transform: uppercase;
@@ -35,6 +45,12 @@ export default css`
     .header_secondary-text {
         font-family: adobe-garamond-pro;
         font-style: italic;
+        ${mq('small')} {
+            font-size: 20px; 
+        }
+        ${mq('large')} {
+          font-size: 30px;
+        }
     }
  }
 `

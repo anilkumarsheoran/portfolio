@@ -1,6 +1,6 @@
 const bp = {
-    small: 500,
-    large: 1200
+    small: 300,
+    large: 700
   };
   
   const mq = n => {
